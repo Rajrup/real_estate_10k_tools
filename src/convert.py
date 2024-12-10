@@ -9,9 +9,13 @@ from jaxtyping import Float, Int, UInt8
 from torch import Tensor
 from tqdm import tqdm
 
-INPUT_IMAGE_DIR = Path("/data/scene-rep/Real-Estate-10k")
-INPUT_METADATA_DIR = Path("/data/scene-rep/Real-Estate-10k/metadata/RealEstate10K")
-OUTPUT_DIR = Path("/data/scene-rep/Real-Estate-10k/re10k_pt")
+# INPUT_IMAGE_DIR = Path("/data/scene-rep/Real-Estate-10k")
+# INPUT_METADATA_DIR = Path("/data/scene-rep/Real-Estate-10k/metadata/RealEstate10K")
+# OUTPUT_DIR = Path("/data/scene-rep/Real-Estate-10k/re10k_pt")
+
+INPUT_IMAGE_DIR = Path("/bigdata2/rajrup/datasets/pixelsplat_data/RealEstate10K")
+INPUT_METADATA_DIR = Path("/bigdata2/rajrup/datasets/pixelsplat_data/RealEstate10K/metadata/RealEstate10K")
+OUTPUT_DIR = Path("/bigdata2/rajrup/datasets/pixelsplat_data/RealEstate10K/re10k_pt")
 
 # Target 100 MB per chunk.
 TARGET_BYTES_PER_CHUNK = int(1e8)
